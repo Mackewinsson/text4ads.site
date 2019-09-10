@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Creador de link de whatsapp</h1>
+<button id="generar__link">Generar link</button>
+<textarea id="texto__link" name="name" rows="1"></textarea>
+<button id="copiar__link">Copiar link</button>
+
+
+
+    <script>
+
+    /* Funcion whatsapp link guarda toda la funcionalidad
+    y se gatilla al click en el boton con la id generar__link
+    */
+
+    function whatsapplink () {
+
+          // 1. Declaramos las variables con las preguntas
+
+          var link;
+          var codigo;
+          var numero;
+          var texto;
+          var pregCodigo = ('¿Cual es el codigo pais? Ejemplo: 56');
+          var pregNum = ('¿Cual es tu numero de telefono? Ejemplo: 955555555 (9 digitos)');
+          var pregText = ('Escribe el mensaje automatico que estara escrito en la conversación Ejemplo: Quiero mas informacion de...');
+
+          // 2. Generamos la funcion que preguntará (PENDIENTE)
+
+          // 3. Llamamos a la funcion 3 veces
+
+          codigo = prompt(pregCodigo);
+          numero = prompt(pregNum);
+          texto = prompt(pregText);
+
+          // 4. Construir LINK
+
+          link = ('api.whatsapp.com/send?phone=' + codigo + numero + '&text=' + texto);
+
+          // 5. Insertar LINK en elemento HTML texto__link
+
+          document.getElementById("texto__link").innerHTML = link;
+
+          // FUNCIONALIDAD PARA HACER COPIAR EL LINK
+
+
+          const copiar__link = document.getElementById('copiar__link');
+
+          // Declara la funcion para que cuando se le de click el boton copie
+
+          copiar__link.onclick = function (){
+
+              // Selecciona el texto
+              texto__link.select();
+              // Lo copia en el portapapeles
+              document.execCommand('Copy');
+          };
+};
+
+document.getElementById('generar__link').onclick=whatsapplink;
+
+    </script>
+  </body>
+</html>
