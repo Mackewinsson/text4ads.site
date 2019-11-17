@@ -1,0 +1,8 @@
+.function__button{
+    font-size: 0.8rem;
+}
+
+.function__button:hover{
+    font-size: 1rem;
+    font-weight: bold; 
+}

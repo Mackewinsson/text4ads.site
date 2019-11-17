@@ -4,10 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/emojionearea.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="js/emojionearea.min.js"></script>
     <title>Text4Ads</title>
   </head>
   <body>
@@ -48,12 +54,12 @@
             <div class="col-md-6">
                 <h3 class="text-center">Emojis mas usados</h3>
                 <div class="row">
-                    <div class="col text-center"><a href="#">👉</a></div>
-                    <div class="col text-center"><a href="#">🔥</a></div>
-                    <div class="col text-center"><a href="#">💥</a></div>
-                    <div class="col text-center"><a href="#">⭐️</a></div>
-                    <div class="col text-center"><a href="#">⚡️</a></div>
-                    <div class="col text-center"><a href="#">📍</a></div>                   
+                    <div class="col text-center"><a href="#" class="copyemoji">👉</a></div>
+                    <div class="col text-center"><a href="#" class="copyemoji">🔥</a></div>
+                    <div class="col text-center"><a href="#" class="copyemoji">💥</a></div>
+                    <div class="col text-center"><a href="#" class="copyemoji">⭐️</a></div>
+                    <div class="col text-center"><a href="#" class="copyemoji">⚡️</a></div>
+                    <div class="col text-center"><a href="#" class="copyemoji">📍</a></div>                   
                 </div>
                 <br>
                 <div class="row">
@@ -70,11 +76,36 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text "><i class="fab fa-facebook-square"></i></span>
                     </div>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    <textarea placeholder="Escribe tu anuncio..."class="form-control" data-emojiable="true" id="texto__anuncio" aria-label="With textarea"></textarea>
                 </div>
                 <br>
-                <div class="col text-center">
-                    <button type="button" class="btn btn-warning center-block">Copiar al portapapeles</button>
+                <div class="row text-center">
+                    <div class="col">
+                        <button id="copiar__anuncio" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    <div class="col">
+                        <button id="clearText" type="button" class="btn btn-danger center-block function__button"><i class="far fa-trash-alt"></i> Clear</button>
+                    </div>
+                </div>
+                <br>
+                <h3 class="text-center">Creador de link de whatsapp</h3>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fab fa-whatsapp"></i></span>
+                    </div>
+                    <textarea placeholder="Aqui aparecera tu link de Whatsapp..."class="form-control" data-emojiable="true" id="texto__link" aria-label="With textarea"></textarea>
+                </div> 
+                <br>
+                <div class="row text-center">
+                    <div class="col">
+                        <button id="generar__link" type="button" class="btn btn-primary center-block function__button"><i class="fas fa-link"></i> Link de WA</button>
+                    </div>
+                    <div class="col">
+                        <button id="copiar__link" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    <div class="col">
+                        <button id="clearText" type="button" class="btn btn-danger center-block function__button"><i class="far fa-trash-alt"></i> Clear</button>
+                    </div>
                 </div>
             </div>
             <!-- COL ENDS -->
@@ -85,15 +116,13 @@
         </div>
         <!-- FIN ROW -->
     </div>
-
-
     <!-- GRID SYSTEM ENDS -->
     <!-- Optional JavaScript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/99f0e76c2f.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
