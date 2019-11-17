@@ -71,40 +71,60 @@
                     <div class="col text-center"><a href="#">⏬</a></div>                   
                 </div>
                 <br>
+
+                <!-- CREADOR DE ANUNCIO CON EMOJIS -->
+
                 <h3 class="text-center">Texto del anuncio</h3>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text "><i class="fab fa-facebook-square"></i></span>
                     </div>
-                    <textarea placeholder="Escribe tu anuncio..."class="form-control" data-emojiable="true" id="texto__anuncio" aria-label="With textarea"></textarea>
+
+                    <!-- AREA DE TEXTO PARA CREAR EL ANUNCIO -->
+
+                    <textarea id="ad__text" placeholder="Escribe tu anuncio..."class="form-control" data-emojiable="true" aria-label="With textarea"></textarea>
                 </div>
                 <br>
+
+                <!-- BOTONES PARA COPIAR Y BORRAR EN EL ANUNCIO -->
+
                 <div class="row text-center">
                     <div class="col">
-                        <button id="copiar__anuncio" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
+                        <button id="copy__adtext" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
                     </div>
                     <div class="col">
                         <button id="clearText" type="button" class="btn btn-danger center-block function__button"><i class="far fa-trash-alt"></i> Clear</button>
                     </div>
                 </div>
+
+                <!-- CREADOR DEL LINK DE WHATSAPP -->
+
                 <br>
                 <h3 class="text-center">Creador de link de whatsapp</h3>
                 <div class="input-group">
+
                     <div class="input-group-prepend">
                         <span class="input-group-text "><i class="fab fa-whatsapp"></i></span>
                     </div>
-                    <textarea placeholder="Aqui aparecera tu link de Whatsapp..."class="form-control" data-emojiable="true" id="texto__link" aria-label="With textarea"></textarea>
+
+                    <!-- AREA DE TEXTO PARA CREAR EL ANUNCIO -->
+
+                    <textarea id="link__text" placeholder="Escribe tu anuncio..."class="form-control" data-emojiable="true" aria-label="With textarea"></textarea>
+                
                 </div> 
                 <br>
+
+                <!-- BOTONES PARA COPIAR Y BORRAR EN EL ANUNCIO -->
+
                 <div class="row text-center">
                     <div class="col">
-                        <button id="generar__link" type="button" class="btn btn-primary center-block function__button"><i class="fas fa-link"></i> Link de WA</button>
+                        <button id="generate__link" type="button" class="btn btn-primary center-block function__button"><i class="fas fa-link"></i> Link de WA</button>
                     </div>
                     <div class="col">
-                        <button id="copiar__link" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
+                        <button id="copy__linktext" type="button" class="btn btn-success center-block function__button"><i class="far fa-copy"></i> Copy</button>
                     </div>
                     <div class="col">
-                        <button id="clearText" type="button" class="btn btn-danger center-block function__button"><i class="far fa-trash-alt"></i> Clear</button>
+                        <button id="clearTextLink" type="button" class="btn btn-danger center-block function__button"><i class="far fa-trash-alt"></i> Clear</button>
                     </div>
                 </div>
             </div>
