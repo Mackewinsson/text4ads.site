@@ -6,3 +6,47 @@
     font-size: 1rem;
     font-weight: bold; 
 }
+
+/* Area de icono de facebook en el text area */
+
+#facebookspan {
+
+background-color: #8b9dc3;
+
+}
+
+/* Area de icono de whatsapp en el text area */
+
+#whatsappspan {
+
+background-color:#dcf8c6;
+
+}
+
+/* Area de texto del link de whatsapp */
+
+#link__text{
+
+    background-color: #ece5dd ;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Area de texto del link de whatsapp */
+
+#ad__text{
+
+    background-color: #f7f7f7 ;
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+svg[Attributes Style] {
+    width: 30;
+    height: 30;
+}
